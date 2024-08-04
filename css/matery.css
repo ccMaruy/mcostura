@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #b48ab2 0%, #ba94b8 100%);
 }
 
 .text-color {
@@ -594,7 +594,17 @@ header .go-back i {
 }
 
 @-webkit-keyframes rainbow {
+	0%,
+	100% {
+		background: rgba(128, 128, 128, 0.5); /* 使用浅灰色 */
+		background: linear-gradient(45deg, rgba(128, 128, 128, 0.5) 0%, rgba(128, 128, 128, 0.4) 100%);
+		background: -moz-linear-gradient(135deg, rgba(128, 128, 128, 0.5) 0%, rgba(128, 128, 128, 0.4) 100%);
+		background: -webkit-linear-gradient(135deg, rgba(128, 128, 128, 0.5) 0%, rgba(128, 128, 128, 0.4) 100%);
+	}
+}
 
+@media only screen and (min-width: 600px){
+@-webkit-keyframes rainbow {
     0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
@@ -638,9 +648,20 @@ header .go-back i {
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
+}
+
 
 @keyframes rainbow {
-
+	0%,
+	100% {
+		background: rgba(128, 128, 128, 0.5); /* 使用浅灰色 */
+		background: linear-gradient(45deg, rgba(128, 128, 128, 0.5) 0%, rgba(128, 128, 128, 0.4) 100%);
+		background: -moz-linear-gradient(135deg, rgba(128, 128, 128, 0.5) 0%, rgba(128, 128, 128, 0.4) 100%);
+		background: -webkit-linear-gradient(135deg, rgba(128, 128, 128, 0.5) 0%, rgba(128, 128, 128, 0.4) 100%);
+	}
+}
+@media only screen and (min-width: 600px){
+@keyframes rainbow {
     0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
@@ -684,7 +705,7 @@ header .go-back i {
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
-
+}
 .index-card {
     margin-top: -10px;
     padding-top: 20px;
