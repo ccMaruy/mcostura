@@ -5,20 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Proyecto final de 3.º, Costura">
-    <meta name="description" content="Proyecto final de 3.º
-    
-        
-    
-    
-        
-    
-        
-        
-        
-        
-        
-        
-      ">
+    <meta name="description" content="Diseño inspirado en el trabajo de la artista Eva Fàbregas">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -337,7 +324,7 @@
 <p><strong>Col·lecció: Proyecto final de 3.º</strong> <a target="_blank" rel="noopener" href="https://www.instagram.com/esdi_barcelona/" title="Esdi Barcelona">@esdi_barcelona</a><br><strong>Model:</strong> @lauracorbero</p>
 </blockquote>
 <h3 id="Inspiracio-Eva-Fabregas"><a href="#Inspiracio-Eva-Fabregas" class="headerlink" title="Inspiració: Eva Fàbregas"></a>Inspiració: Eva Fàbregas</h3><p>Diseño inspirado en el trabajo de la artista Eva Fàbregas.</p>
-<h3 id="SketchBook"><a href="#SketchBook" class="headerlink" title="SketchBook"></a>SketchBook</h3><iframe src="https://onedrive.live.com/embed?resid=CAD0A4DC7F23D3A4%21853&amp;authkey=!APxay0hwRQvD9Tg&amp;em=2&amp;wdAr=1.7777777777777777" style="width: 100%; height: 400px; resize: both; overflow: auto;position: relative;" frameborder="0">这是嵌入 <a target="_blank" href="https://office.com">Microsoft Office</a> 演示文稿，由 <a target="_blank" href="https://office.com/webapps">Office</a> 提供支持。</iframe>
+<h3 id="Looks"><a href="#Looks" class="headerlink" title="Looks"></a>Looks</h3><iframe src="https://onedrive.live.com/embed?resid=CAD0A4DC7F23D3A4%21853&amp;authkey=!APxay0hwRQvD9Tg&amp;em=2&amp;wdAr=1.7777777777777777" style="width: 100%; height: 400px; resize: both; overflow: auto;position: relative;" frameborder="0">这是嵌入 <a target="_blank" href="https://office.com">Microsoft Office</a> 演示文稿，由 <a target="_blank" href="https://office.com/webapps">Office</a> 提供支持。</iframe>
                 
             </div>
             <hr/>
@@ -422,7 +409,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Diseño inspirado en el trabajo de la artista Eva Fàbregas
                         
                     </div>
                     <div class="publish-info">
@@ -479,7 +466,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Explora la dualidad de la naturaleza, centrándose en cómo los procesos destructivos
                         
                     </div>
                     <div class="publish-info">
@@ -724,13 +711,13 @@
 
 
 
-    <a href="https://www.facebook.com/pritheworld/" class="tooltipped" target="_blank" data-tooltip="关注我的Facebook: https://www.facebook.com/pritheworld/" data-position="top" data-delay="50">
+    <a href="https://www.facebook.com/pritheworld/" class="tooltipped" target="_blank" data-tooltip="Sigueme en Facebook: https://www.facebook.com/pritheworld/" data-position="top" data-delay="50">
         <i class="fab fa-facebook-f"></i>
     </a>
 
 
 
-    <a href="https://x.com/world" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://x.com/world" data-position="top" data-delay="50">
+    <a href="https://x.com/world" class="tooltipped" target="_blank" data-tooltip="Sigueme en Twitter: https://x.com/world" data-position="top" data-delay="50">
         <i class="fab fa-twitter"></i>
     </a>
 
@@ -742,7 +729,7 @@
 
 
 
-    <a href="/mcostura/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <a href="/mcostura/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS Suscripción" data-position="top" data-delay="50">
         <i class="fas fa-rss"></i>
     </a>
 
@@ -937,6 +924,91 @@ $(function () {
     
     <script src="/mcostura/libs/instantpage/instantpage.js" type="module"></script>
     
+<style>
+  /* 弹窗背景 */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* 弹窗内容 */
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  /* 关闭按钮 */
+  .popup-close {
+    background: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+</style>
+
+<script>
+  // 检查 cookie 是否存在
+  function getCookie(name) {
+    let value = "; " + document.cookie;
+    let parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+  }
+
+  // 设置 cookie
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      let date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // 显示弹窗
+  function showPopup() {
+    let overlay = document.createElement('div');
+    overlay.className = 'popup-overlay';
+
+    let popup = document.createElement('div');
+    popup.className = 'popup-content';
+    popup.innerHTML = '<h2>¡Aviso!</h2><p>Este sitio web sólo se utiliza como ejemplo y nunca se utilizará para beneficio personal. Todos los materiales provienen de Internet. <br>No tengo ningún derecho sobre ellos. <br>Solo tengo 30 horas y muy poca información. Perdóname si te ofendo por contenido.</p>';
+
+    let closeButton = document.createElement('button');
+    closeButton.className = 'popup-close';
+    closeButton.innerText = 'Ok';
+    closeButton.onclick = function() {
+      document.body.removeChild(overlay);
+    };
+
+    popup.appendChild(closeButton);
+    overlay.appendChild(popup);
+    document.body.appendChild(overlay);
+  }
+
+  // 检查并设置 cookie
+  window.onload = function() {
+    let popupCookie = getCookie("popupShown");
+    if (!popupCookie) {
+      showPopup();
+      setCookie("popupShown", "true", 1); // 设置 cookie 有效期为 1 天
+    }
+  }
+</script>
 
 </body>
 </html>
