@@ -37,7 +37,8 @@ function loadExternalResource(url, type) {
 			waifuPath: live2d_path + "waifu-tips.json",
 			//apiPath: "https://live2d.fghrsh.net/api/",
 			//cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
-			cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/",
+			//cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/",
+			cdnPath: "/mcostura/live2d_models/",
 			//tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"],
 			tools: ["hitokoto", "switch-model", "switch-texture", "photo", "info", "quit"],
 			language: "es"
