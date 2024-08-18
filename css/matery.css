@@ -819,7 +819,7 @@ header .go-back i {
     position: relative;
     margin: 0 auto;
     padding: 1.8rem 1.25rem;
-    z-index: 2;
+    z-index: 1;
 }
 
 .recommend .post-card .post-categories {
