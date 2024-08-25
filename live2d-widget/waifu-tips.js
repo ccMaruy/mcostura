@@ -304,10 +304,18 @@ fetch(t.waifuPath).then((e=>e.json())).then(c)
         }
 		
         ), 0)) : i(e)
+		let lastWidth = window.innerWidth;
+		let lastHeight = window.innerHeight;
 		function updateScreenSize() {
     const width = window.innerWidth;
     const height = window.innerHeight;
 	 if (width < 600) {
+		 if (Math.abs(width - lastWidth) >= 20 || Math.abs(height - lastHeight) >= 20) {
+
+        lastWidth = width;
+        lastHeight = height
+		return
+    };
         localStorage.setItem("waifu-display", Date.now()),
         document.getElementById("waifu").style.bottom = "-500px",
         document.getElementById("waifu").style.display = "none",
