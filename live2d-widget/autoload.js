@@ -40,8 +40,7 @@ function loadExternalResource(url, type) {
 			//cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/",
 			cdnPath: "/mcostura/live2d_models/",
 			//tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"],
-			tools: ["hitokoto", "switch-model", "switch-texture", "photo", "info", "quit"],
-			language: "es"
+			tools: ["hitokoto", "switch-model", "switch-texture", "photo", "quit"]
 		});
 	});
 //}

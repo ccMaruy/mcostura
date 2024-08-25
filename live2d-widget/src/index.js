@@ -127,6 +127,7 @@ function loadWidget(config) {
     }
 
     (function initModel() {
+		
         let modelId = localStorage.getItem("modelId"),
             modelTexturesId = localStorage.getItem("modelTexturesId");
         if (modelId === null) {
@@ -138,6 +139,7 @@ function loadWidget(config) {
         fetch(config.waifuPath)
             .then(response => response.json())
             .then(registerEventListener);
+		
     })();
 }
 
@@ -174,5 +176,4 @@ function initWidget(config, apiPath) {
         loadWidget(config);
     }
 }
-
 export default initWidget;
