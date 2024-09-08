@@ -207,30 +207,28 @@
 <link type="text/css" href="/mcostura/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link type="text/css" href="/mcostura/libs/justifiedGallery/justifiedGallery.min.css" rel="stylesheet">
 
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/mcostura/medias/featureimages/6.jpg')">
+  
+<div class="bg-cover pd-header post-cover" style="background-image: url('/mcostura/../mcostura/galleries/Faldilla%20Frunzida/Faldilla%20frunzida.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <h1 class="description center-align post-title">Faldilla Frunzida</h1>
+					<div class="description center-align"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-  
-
 <div class="container">
     <div class="photo-wrapper">
         
             <div class="waterfall" id="encrypt-blog">
-                <a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida.jpg"       alt=Faldilla Frunzida/Faldilla frunzida.jpg>
-    </a><a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida2.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida2.jpg"       alt=Faldilla Frunzida/Faldilla frunzida2.jpg>
-    </a><a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida3.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida3.jpg"       alt=Faldilla Frunzida/Faldilla frunzida3.jpg>
-    </a><a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida4.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida4.jpg"       alt=Faldilla Frunzida/Faldilla frunzida4.jpg>
+                <a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida.jpg"       alt=Faldilla Frunzida>
+    </a><a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida2.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida2.jpg"       alt=Faldilla Frunzida>
+    </a><a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida3.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida3.jpg"       alt=Faldilla Frunzida>
+    </a><a href="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida4.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Faldilla Frunzida/Faldilla frunzida4.jpg"       alt=Faldilla Frunzida>
     </a>
             </div>
         
@@ -243,8 +241,19 @@
 
     $("a[rel=example_group]").fancybox();
     $("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
-
+	$('.justified-gallery').justifiedGallery({
+    rowHeight: 260 // 修改为你想要的高度
+});
+$(function () {
+        let animateClass = 'animated pulse';
+        $('.photo-wrapper img').hover(function () {
+            $(this).addClass(animateClass);
+        }, function () {
+            $(this).removeClass(animateClass);
+        });
+    });
 </script>
+
 
     <footer class="page-footer bg-color">
     

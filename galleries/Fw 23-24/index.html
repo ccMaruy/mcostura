@@ -207,31 +207,29 @@
 <link type="text/css" href="/mcostura/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link type="text/css" href="/mcostura/libs/justifiedGallery/justifiedGallery.min.css" rel="stylesheet">
 
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/mcostura/medias/featureimages/23.jpg')">
+  
+<div class="bg-cover pd-header post-cover" style="background-image: url('/mcostura/../mcostura/galleries/Fw%2023-24/Fw%2023%2024s.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <h1 class="description center-align post-title">Fw 23-24</h1>
+					<div class="description center-align"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-  
-
 <div class="container">
     <div class="photo-wrapper">
         
             <div class="waterfall" id="encrypt-blog">
-                <a href="/mcostura/galleries/Fw 23-24/Fw 23 24s2.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24s2.jpg"       alt=Fw 23-24/Fw 23 24s2.jpg>
-    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24s3.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24s3.jpg"       alt=Fw 23-24/Fw 23 24s3.jpg>
-    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24s4.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24s4.jpg"       alt=Fw 23-24/Fw 23 24s4.jpg>
-    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24sv.mp4"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24sv.png"       alt=Fw 23-24/Fw 23 24sv.png>
-    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24sv2.mp4"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24sv2.png"       alt=Fw 23-24/Fw 23 24sv2.png>
+                <a href="/mcostura/galleries/Fw 23-24/Fw 23 24s2.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24s2.jpg"       alt=Fw 23-24>
+    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24s3.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24s3.jpg"       alt=Fw 23-24>
+    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24s4.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24s4.jpg"       alt=Fw 23-24>
+    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24sv.mp4"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24sv.png"       alt=Fw 23-24>
+    </a><a href="/mcostura/galleries/Fw 23-24/Fw 23 24sv2.mp4"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/Fw 23-24/Fw 23 24sv2.png"       alt=Fw 23-24>
     </a>
             </div>
         
@@ -244,8 +242,19 @@
 
     $("a[rel=example_group]").fancybox();
     $("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
-
+	$('.justified-gallery').justifiedGallery({
+    rowHeight: 260 // 修改为你想要的高度
+});
+$(function () {
+        let animateClass = 'animated pulse';
+        $('.photo-wrapper img').hover(function () {
+            $(this).addClass(animateClass);
+        }, function () {
+            $(this).removeClass(animateClass);
+        });
+    });
 </script>
+
 
     <footer class="page-footer bg-color">
     

@@ -207,30 +207,28 @@
 <link type="text/css" href="/mcostura/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link type="text/css" href="/mcostura/libs/justifiedGallery/justifiedGallery.min.css" rel="stylesheet">
 
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/mcostura/medias/featureimages/15.jpg')">
+  
+<div class="bg-cover pd-header post-cover" style="background-image: url('/mcostura/../mcostura/galleries/La%20Perla/La%20PERLA.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <h1 class="description center-align post-title">La Perla</h1>
+					<div class="description center-align"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-  
-
 <div class="container">
     <div class="photo-wrapper">
         
             <div class="waterfall" id="encrypt-blog">
-                <a href="/mcostura/galleries/La Perla/La PERLA.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA.jpg"       alt=La Perla/La PERLA.jpg>
-    </a><a href="/mcostura/galleries/La Perla/La PERLA2.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA2.jpg"       alt=La Perla/La PERLA2.jpg>
-    </a><a href="/mcostura/galleries/La Perla/La PERLA3.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA3.jpg"       alt=La Perla/La PERLA3.jpg>
-    </a><a href="/mcostura/galleries/La Perla/La PERLA4.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA4.jpg"       alt=La Perla/La PERLA4.jpg>
+                <a href="/mcostura/galleries/La Perla/La PERLA.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA.jpg"       alt=La Perla>
+    </a><a href="/mcostura/galleries/La Perla/La PERLA2.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA2.jpg"       alt=La Perla>
+    </a><a href="/mcostura/galleries/La Perla/La PERLA3.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA3.jpg"       alt=La Perla>
+    </a><a href="/mcostura/galleries/La Perla/La PERLA4.jpg"     class="photo-item" rel="example_group"     data-fancybox="gallery">      <img src="/mcostura/galleries/La Perla/La PERLA4.jpg"       alt=La Perla>
     </a>
             </div>
         
@@ -243,8 +241,19 @@
 
     $("a[rel=example_group]").fancybox();
     $("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
-
+	$('.justified-gallery').justifiedGallery({
+    rowHeight: 260 // 修改为你想要的高度
+});
+$(function () {
+        let animateClass = 'animated pulse';
+        $('.photo-wrapper img').hover(function () {
+            $(this).addClass(animateClass);
+        }, function () {
+            $(this).removeClass(animateClass);
+        });
+    });
 </script>
+
 
     <footer class="page-footer bg-color">
     
