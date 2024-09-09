@@ -1,1 +1,7 @@
 /* Here is your custom css styles. */
+*{
+    cursor: url("/mcostura/medias/job-seamstress-sewing-machine-and-tape-measure-cursor.cur"),auto!important;
+ }
+ a {
+    cursor: url("/mcostura/medias/job-seamstress-sewing-machine-and-tape-measure-pointer.cur"),auto!important;
+ }
