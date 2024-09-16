@@ -5,3 +5,8 @@
  a {
     cursor: url("/mcostura/medias/job-seamstress-sewing-machine-and-tape-measure-pointer.cur"),auto!important;
  }
+ .page-footer {
+    padding-top: 20px;
+    color: #666;
+    background-color: #ee6e73
+}
