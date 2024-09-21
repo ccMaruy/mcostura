@@ -181,6 +181,7 @@ rgba(0,0,0,0.2);
     @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
     @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
  </style>
+
  <script>
 (function () {
     const loaded = function(){
@@ -191,7 +192,7 @@ rgba(0,0,0,0.2);
             setTimeout(function(){
                 loader.style.display="none";
             },2500); 
-        },1300);//强制显示loading page 1s  
+        },3000);//强制显示loading page 1s  
     };
     loaded();
 })()
@@ -1190,17 +1191,11 @@ $(function () {
 
 </body>
 
-    <div id="loading-container" >
-	<img src="/mcostura/loading.gif" alt="Loading..." style="height:400px">
-         <p class="loading-text">Shh~ Diseñando ropa . . .</p> 
-         <!--<div class="loading-image">
-             <div></div>
-             <div></div>
-             <div></div>
-             <div></div> 
-             <div></div>
-         </div> -->
+    <div id="loading-container" style="width:100%;height:100%">
+      <iframe src="/mcostura/preloader/index.html" style="width:100%;height:100%">/iframe>
+
     </div>
+
 
 
 </html>
